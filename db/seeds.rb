@@ -12,21 +12,89 @@
 
 
 
-b3 = Book.create(title: "Wild", author: "Cheryl Strayed", description: "A woman’s account of the life-changing 1,100-mile solo hike she took along the Pacific Crest Trail in 1995.", publisher: "Vintage", weeks_on_list: 95, rank_this_week: 3)
-Review.create(comment: "Spectacular. . . . A literary and human triumph.", author: "The New York Times Book Review", book_id: b3.id)
-Review.create(comment: "I was on the edge of my seat. . . . It is just a wild ride of a read . . . stimulating, thought-provoking, soul-enhancing.", author: "Oprah Winfrey", book_id: b3.id)
+b3 = Book.create(
+	title: "Wild", 
+	author: "Cheryl Strayed", 
+	description: "A woman’s account of the life-changing 1,100-mile solo hike she took along the Pacific Crest Trail in 1995.", 
+	publisher: "Vintage", 
+	weeks_on_list: 95, 
+	rank_this_week: 3
+	)
 
-b4 = Book.create(title: "The Boys in the Boat", author: "Daniel James", description: "A group of American rowers pursued gold at the 1936 Berlin Olympic Games.", publisher: "Penguin", weeks_on_list: 34, rank_this_week: 4)
-Review.create(comment: "If you imagined a great regatta of books about rowing, then Brown’s BOYS IN THE BOAT certainly makes the final heat….", author: "Boston Globe", book_id: b4.id)
-Review.create(comment: "Cogent history…, and a surprisingly suspenseful tale of triumph.", author: "USA Today", book_id: b4.id)
+Review.create(
+	comment: "Spectacular. . . . A literary and human triumph.", 
+	author: "The New York Times Book Review", 
+	book_id: b3.id
+	)
 
-b5 = Book.create(title: "Alan Turing: The Enigma", author: "Andrew Hodges", description: "The presiding mathetmatician and decoding force at Bletchley Park, the center that cracked the German Enigma code,", publisher: "Princeton University", weeks_on_list: 2, rank_this_week: 5)
-Review.create(comment: "One of the finest scientific biographies ever written.", author: "New Yorker", book_id: b5.id)
-Review.create(comment: "A first-class contribution to history and an exemplary work of biography.", author: "Nature", book_id: b5.id)
+Review.create(
+	comment: "I was on the edge of my seat. . . . It is just a wild ride of a read . . . stimulating, thought-provoking, soul-enhancing.", 
+	author: "Oprah Winfrey", 
+	book_id: b3.id
+	)
 
-b6 = Book.create(title: "Outliers", author: "Malcolm Gladwell", description: "Why some people succeed — it has to do with luck and opportunities as well as talent.", publisher: "Back Bay/Little, Brown", weeks_on_list: 185, rank_this_week: 6)
-Review.create(comment: "In the vast world of nonfiction writing, Malcolm Gladwell is as close to a singular talent as exists today...Outliers is a pleasure to read and leaves you mulling over its inventive theories for days afterward.", author: "New York Times Book Review", book_id: b6.id)
-Review.create(comment: "The explosively entertaining Outliers might be Gladwell's best and most useful work yet...There are both brilliant yarns and life lessons here: Outliers is riveting science, self-help, and entertainment, all in one book.", author: "Entertainment Weekly", book_id: b6.id)
+b4 = Book.create(
+	title: "The Boys in the Boat", 
+	author: "Daniel James", 
+	description: "A group of American rowers pursued gold at the 1936 Berlin Olympic Games.", 
+	publisher: "Penguin", 
+	weeks_on_list: 34, 
+	rank_this_week: 4
+	)
+
+Review.create(
+	comment: "If you imagined a great regatta of books about rowing, then Brown’s BOYS IN THE BOAT certainly makes the final heat….", 
+	author: "Boston Globe", 
+	book_id: b4.id
+	)
+
+Review.create(
+	comment: "Cogent history…, and a surprisingly suspenseful tale of triumph.", 
+	author: "USA Today", 
+	book_id: b4.id
+	)
+
+b5 = Book.create(
+	title: "Alan Turing: The Enigma", 
+	author: "Andrew Hodges", 
+	description: "The presiding mathetmatician and decoding force at Bletchley Park, the center that cracked the German Enigma code,", 
+	publisher: "Princeton University", 
+	weeks_on_list: 2, 
+	rank_this_week: 5
+	)
+
+Review.create(
+	comment: "One of the finest scientific biographies ever written.", 
+	author: "New Yorker", 
+	book_id: b5.id
+	)
+
+Review.create(
+	comment: "A first-class contribution to history and an exemplary work of biography.", 
+	author: "Nature", 
+	book_id: b5.id
+	)
+
+b6 = Book.create(
+	title: "Outliers", 
+	author: "Malcolm Gladwell", 
+	description: "Why some people succeed — it has to do with luck and opportunities as well as talent.", 
+	publisher: "Back Bay/Little, Brown", 
+	weeks_on_list: 185, 
+	rank_this_week: 6
+	)
+
+Review.create(
+	comment: "In the vast world of nonfiction writing, Malcolm Gladwell is as close to a singular talent as exists today...Outliers is a pleasure to read and leaves you mulling over its inventive theories for days afterward.", 
+	author: "New York Times Book Review", 
+	book_id: b6.id
+	)
+
+Review.create(
+	comment: "The explosively entertaining Outliers might be Gladwell's best and most useful work yet...There are both brilliant yarns and life lessons here: Outliers is riveting science, self-help, and entertainment, all in one book.", 
+	author: "Entertainment Weekly", 
+	book_id: b6.id
+	)
 
 b7 = Book.create(title: "The Power of Habit", author: "Charles Duhigg", description: "An examinatino of the science behind habits, how we form them and break them.", publisher: "Random House", weeks_on_list: 51, rank_this_week: 7)
 Review.create(comment: "Sharp, provocative, and useful.", author: "Jim Collins", book_id: b7.id)
@@ -44,7 +112,26 @@ b10 = Book.create(title: "The New Jim Crow", author: "Michelle Alexander", descr
 Review.create(comment: "Devastating. . . . Alexander does a fine job of truth-telling, pointing a finger where it rightly should be pointed: at all of us, liberal and conservative, white and black.", author: "Forbes", book_id: b10.id)
 Review.create(comment: "Invaluable . . . a timely and stunning guide to the labyrinth of propaganda, discrimination, and racist policies masquerading under other names that comprises what we call justice in America.", author: "Daily Kos", book_id: b10.id)
 
+b11 = Book.create(
+	title: "Portait of Dorian Gray", 
+	author: "Oscar Wilde", 
+	description: "Why some people succeed — it has to do with luck and opportunities as well as talent.", 
+	publisher: "Back Bay/Little, Brown", 
+	weeks_on_list: 180, 
+	rank_this_week: 1
+	)
 
+Review.create(
+	comment: "Best book Ever!", 
+	author: "New York Times Book Review", 
+	book_id: b11.id
+	)
+
+Review.create(
+	comment: "The explosively entertaining Outliers might be Gladwell's best and most useful work yet...There are both brilliant yarns and life lessons here: Outliers is riveting science, self-help, and entertainment, all in one book.", 
+	author: "Entertainment Weekly", 
+	book_id: b11.id
+	)
 
 
 
